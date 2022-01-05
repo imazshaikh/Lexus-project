@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ///// Reusable css //////// */
+
+.container{
+    width: 89%;
+    /* height: 100px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-center{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-size: 40px;
+    font-family: segoe UI;
+    font-weight: 100;
+    padding: 0 0 20px 0;
+
+}
+
+
+/* ////////////////////////// */
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.header-container{
+    justify-content: space-between;
+}
+
+
+    
+
+.logo{
+    /* height: 100px; */
+    width: 15%;
+    /* background-color: yellow; */
+    font-family: 'segoe UI';
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    
+}
+
+.logo img{
+    width: 40%;
+}
+
+.navigation{
+    width: 40%;
+    height: 100px;
+    /* background-color: blue; */
+    /* margin: 0 0 0 50%; */
+    
+}
+
+.nav{
+    list-style-type: none;
+    color: white;
+    display: flex;
+}
+
+.nav-link{
+    width: 30%;
+    height: 100px;
+    font-family: 'segoe UI';
+    font-size: 15px;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 100;
+    transition: 0.5s;
+    
+}
+
+.nav-link:hover{
+    transform: scaleY(1.5);
+    font-weight: 600;
+    transform: translateY(-6px)  ;
+    /* border-bottom: 1px solid white; */
+    /* border-width: 10%; */
+}
+
+
+
+/* /////      BANNER                ///////// */
+
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    /* background-image: url(images/1613300.jpg); */
+    background-size: cover;
+    background-position-y: -60px;
+    background-repeat: no-repeat;
+}
+
+.mobile-banner{
+    display: none;
+}
+
+
+.banner-container{
+    width: 100%;
+    background-image: url(images/1613300.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.banner-details{
+    width: 30%;
+    height: 200px;
+    /* background-color: red; */
+    font-size: 0;
+    
+    
+    
+}
+
+.banner-details h3  {
+    color: #cbcbcb;
+    font-size: 40px;
+    font-family: 'segoe UI';
+    line-height: 200px;
+    font-family: 'Kanit', sans-serif;
+    margin-left: 80px;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    
+    animation-name: slide-in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 0.5s; */
+    
+
+}
+
+@keyframes slide-in{
+    0%{
+        opacity: 0;
+    }
+    25% {
+        margin-left: 0px;
+        opacity: 0;
+    }
+
+    60% {
+        margin-right: 100px;
+        opacity: 1;
+    }
+
+    80%{
+        margin-right: 0px;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+.banner-details-right h3{
+    color: #cbcbcb;
+    font-size: 40px;
+    font-family: 'segoe UI';
+    /* background-color: red; */
+    line-height: 200px;
+    font-family: 'Kanit', sans-serif;
+    margin-right: 80px;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+
+    animation-name: slide-out;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 1s; */
+    
+
+}
+
+@keyframes slide-out{
+    0%{
+        opacity: 0;
+    }
+    25% {
+        margin-right: 0px;
+        opacity: 0;
+    }
+
+    60% {
+        margin-left: 100px;
+        opacity: 1;
+    }
+
+    80%{
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* ////////////Banner//////////// */
+
+
+
+
+/* //////  Models   /////////////////// */
+
+.model{
+    /* width: 100%; */
+    padding: 50px 0 50px 0;
+    background-color: #afbab7;
+    /* display: flex; */
+    /* align-items: center; */
+    
+    
+}
+
+.model-type{
+    width: 100%;
+    display: flex;
+
+}
+
+.model-select{
+    width: 100%;
+}
+
+/* .model-select > h3{
+    text-align: end;
+} */
+
+
+.product-container{
+    /* display: flex; */
+    /* width: 100%; */
+    align-items: center;
+    font-weight: 100;
+    /* height: 50px; */
+    flex-direction: column;
+    
+}
+
+.car-model{
+    width: 100%;
+    /* height: 300px; */
+    /* background-color: gray; */
+    /* align-self: flex-end; */
+    border-radius: 20px;  
+    margin: 40px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.car-image{
+    width: 100%;
+    padding: 20px 0 20px 0;
+    border-bottom: 2px solid black ;
+    transition: .5s ease-in-out;
+    
+}
+
+.car-image:hover{
+    transform:translate(10px);
+    
+}
+
+
+
+.car-type h3{
+    padding: 0 0 20px 0;
+}
+ 
+.car-type {
+    width: 80%;
+}
+
+.car-type > h2{
+    text-align: end;
+    font-weight: 500;
+    font-family: monospace;
+    color: rgb(56, 56, 56);
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    height: 0px;
+    /* background-color: red; */
+    transition: 0.5s;
+    overflow: hidden;
+    
+    /* display: none; */
+    
+}
+
+.left-desp{
+    width: 40%;
+    line-height: 25px;
+    text-align: start;
+    height: 130px;
+    color: rgb(56, 56, 56);
+
+}
+
+.right-desp{
+    width: 40%;
+    line-height: 25px;
+    height: 130px;
+    color: rgb(56, 56, 56);
+    
+}
+
+.car-type:hover > .details{
+    /* background-color: red; */
+    height: 130px;
+
+}
+
+.btn{
+    padding: 20px;
+    color: #ffff;
+    border: none;
+    background-color: #000000;
+    border-radius: 10px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px ;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #ffff;
+    color: black;
+    /* font-weight: 500; */
+    border: 1px solid black;
+}
+    
+
+
+/* ///////////             End of Models          /////////// */
+
+
+
+/* ////////////          Upcoming Models                 ///////////////////// */
+
+
+.latest-model{
+    /* background-color: red; */
+    width: 100%;
+    padding: 50px 0 50px 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.upcoming{
+    background-image: url(images/upcoming-model.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+
+.upcoming h1{
+    font-size: 50px;
+    font-weight: 200;
+    font-family: monospace;
+    text-align: center;
+    color: black;
+    padding: 50px 0 0 0 ;
+    text-shadow: 3px 3px gray;
+    transition: .5s;
+    
+}
+
+.upcoming h1:hover{
+    transform: scaleY(1.1);
+    transform: scaleX(1.1);
+}
+
+.img-window{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    
+    
+}
+
+.left-div{
+    width: 50%;
+    height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-right: 2px solid white;
+    transition: 1s;
+    position: absolute;
+    left: 0px;
+    transition: all 1s ease-in-out;
+}
+
+.left-div h1{
+    padding: 0 20px 0 0;
+}
+
+
+
+.right-div{
+    width: 50%;
+    height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-left: 2px solid white;
+    position: absolute;
+    right: 0px;
+    transition: all 1s ease-in-out;
+}
+
+.right-div h1{
+    padding: 0 0 0 20px;
+}
+
+/* .left-div:hover {
+    margin-right: 80%;
+    opacity: 0;
+} */
+
+.overlay{
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.overlay:hover ~ .right-div{
+    right: -100%;
+    overflow: hidden;
+}
+
+.overlay:hover ~ .left-div{
+    left: -100%;
+    overflow: hidden;
+}
+
+
+
+/* Image carousal */
+
+.fade-carousal{
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.fade-carousal h2{
+    font-size: 40px;
+    font-family: segoe UI;
+    font-weight: 100;
+    padding: 0 0 40px 0;
+    text-align: center;
+
+    
+}
+
+
+.carousel{
+
+    width: 100%;
+    height: 90vh;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* background-color: #afbab7; */
+    padding: 0 0 40px 0;
+}
+
+.carousel_child{
+
+    width: 100%;
+    height: 90vh;
+    /* background-color: green; */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    position: absolute;
+    animation-duration: 20s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+
+}
+
+.carousel_child:nth-child(1){
+    animation-name: carousal-child-5;
+    background-image: url(images/2021-Lexus-LC-500-Inspiration-Series-Exterior-Side-View.jpg);
+}
+
+.carousel_child:nth-child(2){
+    animation-name: carousal-child-4;
+    background-image: url(images/2021-Lexus-LC-500-Inspiration-Series-Exterior-Front-Quarter.jpg);
+}
+
+.carousel_child:nth-child(3){
+    animation-name: carousal-child-3;
+    background-image: url(images/2021-Lexus-LC-500-Inspiration-Series-Exterior-Rear-Spoiler.jpg);
+}
+
+.carousel_child:nth-child(4){
+    animation-name: carousal-child-2;
+    background-image: url(images/2021-Lexus-LC-500-Inspiration-Series-Exterior-Rear-View.jpg);
+}
+
+.carousel_child:nth-child(5){
+    animation-name: carousal-child-1;
+    background-image: url(images/2021-Lexus-LC-500-Inspiration-Series-Exterior-Side-View.jpg);
+}
+
+
+@keyframes carousal-child-1{
+
+
+    20%{
+        opacity: 1;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    60%{
+        opacity: 0;
+    }
+
+    80%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+}
+
+@keyframes carousal-child-2{
+
+    20%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 1;
+    }
+
+    60%{
+        opacity: 0;
+    }
+
+    80%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes carousal-child-3{
+
+    20%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    60%{
+        opacity: 1;
+    }
+
+    80%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes carousal-child-4{
+
+    20%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    60%{
+        opacity: 0;
+    }
+
+    80%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes carousal-child-5{
+
+    20%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    60%{
+        opacity: 0;
+    }
+
+    80%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+/* Contact us */
+
+.contact{
+    width: 100%;
+    padding: 40px 0 40px 0;
+}
+
+.contact-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container h1{
+    
+    font-size: 40px;
+    font-family: segoe UI;
+    font-weight: 100;
+    /* padding: 0 0 40px 0; */
+    text-align: center;
+}
+
+.form-container{
+    width: 100%;
+    padding: 10px 0 10px 0;
+    /* background-color: tomato; */
+    margin: 30px 0 0 0 ;
+    display: flex;
+    justify-content: center;
+
+}
+.form{
+    width: 80%;
+     /* background-color: #000000;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+
+}
+
+.form-field{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-indent: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+    transition: .4s;
+}
+
+.form-field:nth-child(4){
+    height: 100px;
+}
+
+.form-field:focus{
+    box-shadow: 0 0 8px lightblue;
+}
+
+.contact-btn{
+    width: 30%;
+}
+
+.contact-btn:hover{
+    background-color: #afbab7;
+    font-weight: 500;
+}
+
+/*    Footer      */
+
+.footer{
+    width: 100%;
+    padding: 40px 0 40px 0;
+    background-color: #000000;
+    
+}   
+
+.footer-container{
+    justify-content: space-evenly;
+}
+
+.footer-child{
+    width: 22%;
+    /* height: 300px; */
+    /* background-color: red; */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.footer-child h2{
+    font-weight: 200;
+    padding: 0 0 20px 0;
+    
+
+}
+
+.quick-link{
+    list-style-type: none;
+}
+
+.quick-link li{
+    padding: 4px 0 4px 0;
+}
+
+
+
+
+

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
+
+@media (min-width:481px) and (max-width:768px){
+
+    
+
+
+    .header{
+        width: 100%;
+        height: auto;
+    }
+
+    .logo{
+        width: 30%;
+        height: 50px;
+    }
+
+    .navigation{
+        width: 70%;
+        line-height: 50px;
+        height: 50px;
+    }
+
+    .nav-link{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 13px;
+    }
+
+
+    /* css for banner */
+
+    .banner{
+        width: 100%;
+        height: 70vh;
+
+    }
+
+    .banner-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+
+    .banner-details{
+        display: none;
+    }
+
+    .banner-details-right{
+        display: none;
+    }
+
+    .mobile-banner{
+        width: 100%;
+        height: 70vh;
+        align-self: flex-end;
+        display: block;
+
+    }
+
+    .mobile-banner p{
+         font-family: 'Licorice', cursive;
+        font-size: 25px;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0 0 70px 0;
+        /* background-color: black; */
+        color: white;
+
+
+    }
+
+    .mobile-banner .lft{
+        padding: 0 30px 0 0;
+        animation-name: lft;
+        animation-iteration-count: 1;
+        animation-play-state: running;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes lft {
+
+        0%{
+            opacity: 0;
+        }
+        25% {
+            margin-left: 0px;
+            opacity: 0;
+        }
+    
+        60% {
+            margin-right: 50px;
+            opacity: 0;
+        }
+    
+        80%{
+            margin-right: 0px;
+            opacity: 1;
+        }
+
+        
+    
+
+    }
+
+    .mobile-banner .rgt{
+        padding: 0 30px 0 0;
+        animation-name: rgt;
+        animation-iteration-count: 1;
+        animation-play-state: running;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes rgt {
+
+        0%{
+            opacity: 0;
+        }
+        25% {
+            margin-left: 0px;
+            opacity: 0;
+        }
+    
+        60% {
+            margin-left: 50px;
+            opacity: 0;
+        }
+    
+        80%{
+            margin-right: 0px;
+            opacity: 1;
+        }
+
+        
+    
+
+    }
+
+    /* css for model */
+
+    .car-model{
+        margin: 10px;
+    }
+
+    .model-type{
+        flex-wrap: wrap;
+    }
+
+    .car-image{
+        cursor: pointer;
+    }
+
+    .btn{
+        cursor: pointer;
+    }
+
+    /* css for upcoming model */
+
+    .img-window{
+        width: 100%;
+        height: 70vh;
+    }
+    
+    .latest-model{
+        width: 100%;
+        height: 70vh;
+    }
+
+    .upcoming{
+        height: 70vh;
+        /* width: 100%; */
+        background-size: contain;
+        background-position: center;
+    }
+
+    .left-div{
+        width: 50%;
+        height: 70vh;
+        font-size: 30px;
+    }
+
+    .right-div{
+        width: 50%;
+        height: 70vh;
+        font-size: 30px;
+    }
+
+    .overlay{
+        width: 100%;
+        height: 70vh;
+    }
+
+    /* css for gallery */
+
+    .fade-carousal{
+        width: 100%;
+        height: 80vh;
+    }
+
+    .carousel{
+        height: 60vh;
+    }
+
+
+    .carousel-child{
+        /* width: 100%;  */
+       height: 70vh; 
+       background-size: contain;
+   }
+
+   .carousel_child:nth-child(1){
+    height: 60vh;
+    width: 100%
+}
+
+    .carousel_child:nth-child(2){
+    height: 60vh;
+    width: 100%;
+
+}
+
+    .carousel_child:nth-child(3){
+    height: 60vh;
+    width: 100%;
+}
+
+    .carousel_child:nth-child(4){
+    height: 60vh;
+    width: 100%;
+}
+
+    .carousel_child:nth-child(5){
+    height: 60vh;
+    width: 100%;
+}
+
+    
+
+    
+}
